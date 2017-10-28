@@ -19,6 +19,7 @@ After *zip.php* successfully connects to the database, it uses the user-inputted
 
 * Finish README.md (including screenshots)
 * Clean up front-end
+* Improve back-end
 
 ---
 
