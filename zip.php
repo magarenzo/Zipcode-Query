@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Exercise 4</title>
+    <title>zipcode-query</title>
 </head>
 <body>
     <h1>Zipcode Information</h1>
