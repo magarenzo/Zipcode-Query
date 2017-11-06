@@ -11,7 +11,7 @@ After *zip.php* successfully connects to the database, it uses the user-inputted
 
 <h1>Zipcode Information</h1>
 
-![](https://magarenzo.com/imgs/table.png)
+![](https://magarenzo.com/hosting/table.png)
 
 SELECT primary_city, population, areacode FROM zip INNER JOIN zip_area ON (zip.zipcode=zip_area.zipcode) WHERE zip.zipcode='11530';
 
