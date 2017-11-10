@@ -9,8 +9,6 @@ After *zip.php* successfully connects to the database, it uses the user-inputted
 
 <h3>Output:</h3>
 
-<h1>Zipcode Information</h1>
-
 ![](https://magarenzo.com/hosting/query.png)
 
 ---
