@@ -1,48 +1,48 @@
 <html>
 <head>
-    <title>zipcode-query</title>
+    <title>Zipcode Query</title>
 </head>
 <body>
     <h1>Zipcode Information</h1>
-    <form>
+    <form method="post">
         <table border="1">
             <tr>
-                <td>Enter zipcode: <input type="zip" size="10" name="zip"></td>
-            </tr>
-            <tr>
+                <td>Enter a zipcode: <input type="text" size="10" name="input"/></td>
                 <td><input type="submit"></td>
             </tr>
-        </table>
-    <?php
-        try { // connect to the database
-            $dbh = new PDO('pgsql:dbname=zipcodes');
-        } // end try
-        catch (PDOException $e) { // error catching
-            print "Error: ".$e->getMessage()."<br>";
-            die();
-        } // end catch
-        $q = "SELECT primary_city, population, areacode FROM zip INNER JOIN zip_area ON (zip.zipcode=zip_area.zipcode)";
-        if (array_key_exists("zip", $_REQUEST)) {
-            $q .= " WHERE zip.zipcode='" . $_REQUEST['zip']."';";
-        } // end if
-        else {
-            $q .= " LIMIT 10";
-        } // end else
-        print "<pre>$q</pre>";
-    ?>
-    <b>city&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pop.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;areacode</b>
-    <?php
-        echo "<pre>";
-        $res = $dbh->query($q, PDO::FETCH_ASSOC);
-        foreach ($res as $row) {
-            foreach ($row as $key=>$value) {
-                print "$value\t";
-            } // end foreach
-            print "\n";
-        } // end foreach
-        echo "</pre>";
-        $dbh = null;
-    ?>
+         </table>
     </form>
+    <?php
+        if (array_key_exists('input', $_POST)) {
+            $input = $_POST['input'];
+            try {
+                $dbh = new PDO('pgsql:dbname=zipcodes');
+                $res = $dbh->query("SELECT primary_city, population, areacode FROM zip INNER JOIN zip_area ON (zip.zipcode=zip_area.zipcode) WHERE zip.zipcode='$input'", PDO::FETCH_ASSOC);
+                echo '<pre>';
+                echo '<table border="1">';
+                foreach ($res as $row) {
+                    echo '<tr>';
+                    foreach ($row as $col_name=>$row_value) {
+                        echo '<td>'.$col_name.'</td>';
+                    } // end foreach
+                    echo '</tr>';
+                    echo '<tr>';
+                    foreach ($row as $col_name=>$row_value) {
+                        echo '<td>'.$row_value.'</td>';
+                    } // end foreach
+                    echo '</tr>';
+                } // end foreach
+                echo '</table>';
+                echo '</pre>';
+                $dbh = null;
+            } // end try
+            catch (PDOException $e) {
+                echo '<pre>';
+                print "Error: ".$e->getMessage();
+                echo '</pre>';
+                die();
+            } // end catch
+        } // end if
+    ?>
 </body>
 </html>
