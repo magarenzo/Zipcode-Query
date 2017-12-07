@@ -1,5 +1,5 @@
 # zipcode-query
-Uses PHP to connect to a PostgreSQL database and query data
+Query for data relating to a user-inputted zipcode
 
 ---
 
@@ -16,6 +16,7 @@ After *zip.php* successfully connects to the PSQL database, it uses the user-inp
 <h3>Necessary Installations:</h3>
 
 * [`psql`](https://help.ubuntu.com/lts/serverguide/postgresql.html)
+* [`Free Zipcode Database`](http://federalgovernmentzipcodes.us/)
 
 ---
 
