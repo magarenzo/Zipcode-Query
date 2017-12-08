@@ -20,4 +20,10 @@ After *zip.php* successfully connects to the PSQL database, it uses the user-inp
 
 ---
 
+<h3>To Do:</h3>
+
+* Add sanitation checks to prevent cross-site scripting
+
+---
+
 *zip.php* was originally created as an assignment in CSC443 (Database Management Systems). It has undergone changes since then.
