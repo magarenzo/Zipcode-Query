@@ -3,7 +3,7 @@ Query for data relating to a user-inputted zipcode
 
 ---
 
-After *zip.php* successfully connects to the PSQL database, it uses the user-inputted zipcode to finish the included query written. If the query is succesful, the webpage hosting the script will display the pulled data. PHP-based front-end formatted with HTML. 
+After [*zip.php*](https://github.com/magarenzo/zipcode-query/blob/master/zip.php) successfully connects to the PSQL database, it uses the user-inputted zipcode to finish the included query written. If the query is succesful, the webpage hosting the script will display the pulled data. PHP-based front-end formatted with HTML. 
 
 ---
 
