@@ -26,4 +26,4 @@ After [*zip.php*](https://github.com/magarenzo/zipcode-query/blob/master/zip.php
 
 ---
 
-*zip.php* was originally created as an assignment in CSC443 (Database Management Systems). It has undergone changes since then.
+This was originally created as an assignment in CSC443 (Database Management Systems). It has undergone changes since then.
