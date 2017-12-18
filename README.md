@@ -9,7 +9,7 @@ After [*zip.php*](https://github.com/magarenzo/zipcode-query/blob/master/zip.php
 
 <h3>Output:</h3>
 
-![](https://github.com/magarenzo/zipcode-query/blob/master/query.png)
+![](https://github.com/magarenzo/zipcode-query/blob/master/screenshots/query.png)
 
 ---
 
