@@ -10,7 +10,7 @@ After successfully connecting to the PSQL database, it uses the user-inputted zi
 
 ## Output
 
-![](https://github.com/magarenzo/zipcode-query/blob/master/screenshots/query.png)
+![](https://github.com/magarenzo/zipcode-query/blob/master/media/query.png)
 
 ---
 
