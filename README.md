@@ -10,14 +10,14 @@ After successfully connecting to the PSQL database, it uses the user-inputted zi
 
 ![](https://github.com/magarenzo/zipcode-query/blob/master/media/query.png)
 
+## TODO
+
+* Add sanitation checks to prevent cross-site scripting
+
 ## Dependencies
 
 * [`psql`](https://help.ubuntu.com/lts/serverguide/postgresql.html)
 * [`Free Zipcode Database`](http://federalgovernmentzipcodes.us/)
-
-## TODO
-
-* Add sanitation checks to prevent cross-site scripting
 
 ## Owner
 
