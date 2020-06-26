@@ -21,6 +21,6 @@ After successfully connecting to the PSQL database, it uses the user-inputted zi
 
 ## Owner
 
-* Michael A. Agarenzo
+Michael A. Agarenzo
 
-* This was originally created as an assignment in CSC443 (Database Management Systems). It has undergone changes since then
+This was originally created as an assignment in CSC443 (Database Management Systems) and it has undergone some changes since then
