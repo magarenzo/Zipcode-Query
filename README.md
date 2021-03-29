@@ -21,6 +21,6 @@ Add sanitation checks to prevent cross-site scripting
 
 ## Owner
 
-[Michael A. Agarenzo](https://magarenzo.com)
+[Michael A.](https://linkedin.com/in/magarenzo)
 
 This was originally created as an assignment in CSC443 (Database Management Systems) and it has undergone some changes since then
